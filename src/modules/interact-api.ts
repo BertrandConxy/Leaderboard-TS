@@ -1,4 +1,4 @@
-type score = {
+export type score = {
   name: string;
   score: string;
 };
