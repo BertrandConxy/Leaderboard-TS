@@ -1,5 +1,5 @@
-export type score = {
-  name: string;
+type score = {
+  user: string;
   score: string;
 };
 
