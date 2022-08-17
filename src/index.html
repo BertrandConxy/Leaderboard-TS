@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
+    <title>Leaderboard | Lead your generation</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header class="header">
+        <h1 class="header__logo">LeaderBoard</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section class="leaderboard">
+                <div class="leaderboard__header-wrapper">
+                    <h2 class="heading leaderboard__heading">Recent scores</h2>
+                    <button type="button" class="btn leaderboard__refresh" id="refresh-btn" >Refresh</button>
+                </div>
+                <div class="leaderboard__score-wrapper" id="score-container" >
+                    <!-- Dynamic content -->
+                </div>
+            </section>
+            <section class="leader-section">
+                <h2 class="heading leader-section__heading">Submit your scores</h2>
+                <form action="#" class="leader-section__form" id="score-form">
+                    <input type="text" name="name" id="name-input" class="leader-section__form--control" placeholder="Enter your name..." required>
+                    <input type="text" name="score" id="score-input" class="leader-section__form--control" placeholder="Enter your score..." required>
+                    <input type="submit" value="Submit" id="submit-btn" class="btn leader-section__form--btn">
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
