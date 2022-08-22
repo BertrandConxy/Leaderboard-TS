@@ -48,6 +48,31 @@ body {
     padding: 2rem 3rem;
 }
 
+.leaderboard {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.leaderboard__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.leaderboard__score-wrapper > ul {
+    list-style: none;
+    height: 40rem;
+    overflow: hidden;
+    
+}
+
+.leaderboard__score-wrapper:hover > ul {
+    overflow-y: scroll;
+}
+
 
 
 
