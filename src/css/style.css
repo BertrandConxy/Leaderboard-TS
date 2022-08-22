@@ -65,13 +65,31 @@ body {
 .leaderboard__score-wrapper > ul {
     list-style: none;
     height: 40rem;
-    overflow: hidden;
+    overflow: hidden ;
     
 }
 
 .leaderboard__score-wrapper:hover > ul {
     overflow-y: scroll;
 }
+
+::-webkit-scrollbar {
+    width: .7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);; 
+  border-radius: 10px;
+}
+
+
 
 
 
