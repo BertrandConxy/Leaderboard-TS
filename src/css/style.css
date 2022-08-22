@@ -123,6 +123,37 @@ body {
     color: var(--color-white);
 }
 
+.leader-section__form--control:focus {
+     border: 3px solid var(--color-secondary);
+    box-shadow: .3rem 0 1rem rgba(37, 71, 192, 0.524);
+    outline: none;
+}
+
+.btn {
+    background: var(--color-secondary);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    color: var(--color-white);
+    font-weight: bold;
+    box-shadow: .3rem 0 1rem rgba(37, 71, 192, 0.524);
+    transition: all .7s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.leader-section__form--btn {
+    margin-top: 1rem;
+}
+
 
 
 
