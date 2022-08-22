@@ -25,6 +25,8 @@ ScoreForm.addEventListener('submit', async (e)=> {
     score: ScoreForm.score.value
   }
 
+  console.log(Play)
+
   await postScore(URL, Play);
     ScoreForm.reset()
 } )

@@ -7,7 +7,7 @@ env:
 
 jobs:
   eslint:
-    name: ESLint
+    name: ESLint(TS)
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
