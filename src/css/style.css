@@ -89,6 +89,41 @@ body {
   border-radius: 10px;
 }
 
+.leaderboard__score-wrapper > ul > li {
+    margin: .6rem 1rem;
+}
+
+.leader-section {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.leader-section__heading {
+    margin: .4rem 0 3rem 0;
+}
+
+.leader-section__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leader-section__form--control {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--color-secondary);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: var(--color-white);
+}
+
+
 
 
 
