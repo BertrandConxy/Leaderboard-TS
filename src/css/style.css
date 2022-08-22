@@ -1,6 +1,6 @@
 :root {
   --color-primary-light: #28364e;
-  --color-primary-dark: #0a0d14;
+  --color-primary-dark: #0e1016;
   --color-secondary: #556ff7;
   --color-white: #fff;
   --default-fs: 1.6rem;
@@ -26,4 +26,39 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: var(--default-fs);
   color: var(--color-white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--color-primary-dark);
+}
+
+.header__logo {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
 }
