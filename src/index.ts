@@ -20,12 +20,12 @@ RefreshBtn.addEventListener('click', ()=> {
 } )
 
 ScoreForm.addEventListener('submit', async (e)=> {
-    e.preventDefault();
-    const Play:score = {
-      user: NameInput.value,
-      score: ScoreForm.score.value
-    }
-    await postScore(URL, Play);
+  e.preventDefault();
+  const Play:score = {
+    user: NameInput.value,
+    score: ScoreForm.score.value
+  }
+  await postScore(URL, Play);
     ScoreForm.reset()
 } )
 
