@@ -8,8 +8,7 @@ const RefreshBtn = document.getElementById('refresh-btn') as HTMLButtonElement;
 const NameInput = document.getElementById('name-input') as HTMLInputElement;
 
 
-const URL: string =
-  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/A9GgGr2ZTgKdQScdJRGi/scores/";
+const URL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/A9GgGr2ZTgKdQScdJRGi/scores/";
 
 window.addEventListener('DOMContentLoaded', ()=> {
     displayScore(URL, ScoreWrapper);
@@ -25,6 +24,7 @@ ScoreForm.addEventListener('submit', async (e)=> {
     user: NameInput.value,
     score: ScoreForm.score.value
   }
+
   await postScore(URL, Play);
     ScoreForm.reset()
 } )
