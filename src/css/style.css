@@ -1,0 +1,29 @@
+:root {
+  --color-primary-light: #28364e;
+  --color-primary-dark: #0a0d14;
+  --color-secondary: #556ff7;
+  --color-white: #fff;
+  --default-fs: 1.6rem;
+
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-primary-light); 
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--default-fs);
+  color: var(--color-white);
+}
